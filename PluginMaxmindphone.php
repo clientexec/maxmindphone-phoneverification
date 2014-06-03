@@ -13,29 +13,29 @@ class PluginMaxmindphone extends PhoneVerificationPlugin
     function getVariables()
     {
         $variables = array(
-            /*T*/'Plugin Name'/*/T*/   => array(
+            lang('Plugin Name')   => array(
                 'type'          => 'hidden',
-                'description'   => /*T*/''/*/T*/,
-                'value'         => /*T*/'Maxmind Phone Verification'/*/T*/,
+                'description'   => '',
+                'value'         => lang('Maxmind Phone Verification'),
             ),
-            /*T*/'Enabled'/*/T*/       => array(
+            lang('Enabled')       => array(
                 'type'          => 'yesno',
-                'description'   => /*T*/"This setting will\r\nenable the Maxmind telephone verification plugin on signup for new\r\ncustomers. (Phone credits are bought separate from regular credit card\r\nfraud detection services)<br><a\r\nhref=http://www.maxmind.com/app/telephone_buynow?rId=clientexec target='_blank'>http://www.maxmind.com/app/telephone_buynow</a>"/*/T*/,
+                'description'   => lang("This setting will enable the Maxmind telephone verification plugin on signup for new customers. (Phone credits are bought separate from regular credit card fraud detection services)<br><a href=http://www.maxmind.com/app/telephone_buynow?rId=clientexec target='_blank'>http://www.maxmind.com/app/telephone_buynow</a>"),
                 'value'         => '0',
             ),
-            /*T*/'MaxMind License Key'/*/T*/       => array(
+            lang('MaxMind License Key')       => array(
                 'type'          => 'text',
-                'description'   => /*T*/'Enter your MaxMind License Key here.<br>You can obtain a license at <br><a href=http://www.maxmind.com/app/ccv_buynow?rId=clientexec target="_blank">http://www.maxmind.com/app/ccv_buynow</a>'/*/T*/,
+                'description'   => lang('Enter your MaxMind License Key here.<br>You can obtain a license at <br><a href=http://www.maxmind.com/app/ccv_buynow?rId=clientexec target="_blank">http://www.maxmind.com/app/ccv_buynow</a>'),
                 'value'         => '',
             ),
-            /*T*/'Minimum Bill Amount to Trigger Telephone Verification'/*/T*/       => array(
+            lang('Minimum Bill Amount to Trigger Telephone Verification')       => array(
                 'type'          => 'text',
-                'description'   => /*T*/'If MaxMind Telephone Verification is enabled, only trigger the verification call if the total bill amount exceeds this amount'/*/T*/,
+                'description'   => lang('If MaxMind Telephone Verification is enabled, only trigger the verification call if the total bill amount exceeds this amount'),
                 'value'         => '0',
             ),
-            /*T*/'Minimum Fraud Score to Trigger Telephone Verification'/*/T*/       => array(
+            lang('Minimum Fraud Score to Trigger Telephone Verification')       => array(
                 'type'          => 'text',
-                'description'   => /*T*/'If MaxMind Telephone Verification and Fraud Control are enabled, only trigger the verification call if the fraud score exceeds this number.'/*/T*/,
+                'description'   => lang('If MaxMind Telephone Verification and Fraud Control are enabled, only trigger the verification call if the fraud score exceeds this number.'),
                 'value'         => '0',
             ),
         );
